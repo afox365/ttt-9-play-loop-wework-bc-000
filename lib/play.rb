@@ -79,5 +79,11 @@ def full?(board)
   board.all?{|token| token == "X" || token == "O"}
 end
 
+def winner(board)
+  if winning_combo = won?(board)
+    board[winning_combo.first]
+  end
+end
+
 
 
