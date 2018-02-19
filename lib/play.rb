@@ -45,3 +45,8 @@ def play(board)
     puts "Cat's Game!"
   end
 end
+
+def over?(board)
+  won?(board) || draw?(board)
+end
+
