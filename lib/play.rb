@@ -39,6 +39,7 @@ def play(board)
   counter = 0 
   while counter < 9 (board)
     turn(board)
+    counter += 1
   end
   if won?(board)
     puts "Congratulations #{winner(board)}!"
